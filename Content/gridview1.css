@@ -1,0 +1,32 @@
+﻿#grid1 {
+    width: 300px;
+    height: 300px;
+    border-left-color: white;
+    border-top-color: white;
+    border-bottom-color: white;
+    border-right-color: white;
+    font-size: 26px;
+}
+
+#grid2 {
+    width: 300px;
+    height: 300px;
+    border-left-color: white;
+    border-right-color: white;
+    border-top-color: white;
+    border-bottom-color: white;
+    font-size: 26px;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+
+.table1 {
+    padding: 20px; 
+    border: solid; 
+    margin-left: 20px; 
+    margin-right: 20px;
+    border-width: 2px;
+    border-radius:5px;
+    border-color: darkgrey;
+}
