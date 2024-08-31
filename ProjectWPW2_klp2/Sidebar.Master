@@ -1,0 +1,99 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="Sidebar.master.vb" Inherits="Project_wpw2.Sidebar" %>
+
+<!DOCTYPE html>
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .sidebar {
+            background-color: #1B65A7;
+            width: 432px;
+        }
+        #admin{
+            color: white;
+            font-family: 'Lucida Sans';
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size:22px;
+        }
+        #namaAdmin{
+            color: white;
+            font-family: 'Lucida Sans';
+            font-weight: normal;
+            font-size:18px;
+            letter-spacing: 1px;
+        }
+        .auto-style2 { 
+            width: 432px;
+            height: auto;
+            text-align:center;
+            padding-bottom: 42px;
+        }
+        
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table class="auto-style1" cellspacing="0">
+                <tr>
+                    <td class="sidebar" style="height: 194px;">
+                        <asp:Image ID="Image1" runat="server" ImageUrl="~/Image/logo.png" Width="386px" Height="100px" style="margin-left: 18px"/>
+                     </td>
+                    <td rowspan="8" style="background-color: white; width: 1488px; height: 194px">
+                        <asp:ContentPlaceHolder ID="isi" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr>
+                <tr>
+                   <td class="auto-style2" style="background-color:#1B65A7;">
+                       
+                       <asp:Image ID="Image2" runat="server" ImageUrl="~/Image/user.png" Width="80px" Height="80px" style="margin-top:46px; margin-bottom:10px"/>
+                       <br />
+                       <asp:Label ID="admin" runat="server" Text="ADMIN"></asp:Label>
+                       <br /><br />
+                       <asp:Label ID="namaAdmin" runat="server" Text="khairi annisa"></asp:Label>
+                       
+                    </td>
+                </tr>
+                <tr>
+                   <td class="sidebar" style="height: 102px;">
+                      
+                       <asp:Image ID="Image3" runat="server" ImageUrl="~/Image/m1.png" Width="24px" Height="24px" style="margin-right:17px; margin-left:69px"/>
+                       <asp:HyperLink ID="HyperLink1" runat="server" style="font-family:'Lucida Sans'; color:white; font-size:24px; font-weight:bold; text-decoration: none" NavigateUrl="~/ProjectWPW2_klp2/Dashboard.aspx">Dashboard</asp:HyperLink>
+                   </td>
+                </tr>
+                <tr>
+                   <td class="sidebar" style="height: 102px;">
+                       <asp:Image ID="Image4" runat="server" ImageUrl="~/Image/m2.png" Width="24px" Height="24px" style="margin-right:17px; margin-left:69px;"/>
+                       <asp:HyperLink ID="HyperLink2" runat="server" style="font-family:'Lucida Sans'; color:white; font-size:24px; font-weight:bold ;text-decoration: none"  NavigateUrl="~/ProjectWPW2_klp2/ruangan.aspx">Ruangan</asp:HyperLink>
+                   </td>
+                </tr>
+                <tr>
+                   <td class="sidebar" style="height: 102px;">
+                       <asp:Image ID="Image5" runat="server" ImageUrl="~/Image/m3.png" Width="24px" Height="24px" style="margin-right:17px; margin-left:69px;"/>
+                       <asp:HyperLink ID="HyperLink3" runat="server" style="font-family:'Lucida Sans'; color:white; font-size:24px; font-weight:bold; text-decoration:none;" NavigateUrl="~/ProjectWPW2_klp2/Peminjaman.aspx">Peminjaman</asp:HyperLink>
+                   </td>
+                </tr>
+                <tr>
+                   <td class="sidebar" style="height: 102px;"> 
+                       <asp:Image ID="Image6" runat="server" ImageUrl="~/Image/m4.png" Width="24px" Height="24px" style="margin-right:17px; margin-left:69px;"/>
+                       <asp:HyperLink ID="HyperLink4" runat="server" style="font-family:'Lucida Sans'; color:white; font-size:24px; font-weight:bold;text-decoration:none;" NavigateUrl="~/ProjectWPW2_klp2/RiwayatPinjam.aspx">Riwayat Peminjaman</asp:HyperLink>
+                   </td>
+                </tr>
+                <tr>
+                   <td class="sidebar" style="height: 102px;">
+                       <asp:Image ID="Image7" runat="server" ImageUrl="~/Image/m5.png" Width="24px" Height="24px" style="margin-right:17px; margin-left:69px;"/>
+                       <asp:HyperLink ID="HyperLink5" runat="server" style="font-family:'Lucida Sans'; color:white; font-size:24px; font-weight:bold; text-decoration:none;" NavigateUrl="~/ProjectWPW2_klp2/Logout.aspx">Logout</asp:HyperLink>
+                   </td>
+                </tr>
+                <tr>
+                   <td class="sidebar" style="height: 102px;"> </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
